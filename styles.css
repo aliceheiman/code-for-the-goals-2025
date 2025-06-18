@@ -1,0 +1,32 @@
+/* colors */
+:root {
+  --white: #ffffff;
+  --lightgreen: #b3fd72;
+  --darkgreen: #00d577;
+  --darkblue: #1f003f;
+  --yellow: #f6d46b;
+}
+
+/* fonts */
+@font-face {
+  font-family: 'Anton';
+  src: url('/fonts/Anton/Anton-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satisfy';
+  src: url('/fonts/Satisfy/Satisfy-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VT323';
+  src: url('/fonts/VT323/VT323-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* sections */
