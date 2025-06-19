@@ -11,28 +11,28 @@
 /* fonts */
 @font-face {
   font-family: 'PlusJakartaSans';
-  src: url('/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  src: url('fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Anton';
-  src: url('/fonts/Anton/Anton-Regular.ttf') format('truetype');
+  src: url('fonts/Anton/Anton-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Satisfy';
-  src: url('/fonts/Satisfy/Satisfy-Regular.ttf') format('truetype');
+  src: url('fonts/Satisfy/Satisfy-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'VT323';
-  src: url('/fonts/VT323/VT323-Regular.ttf') format('truetype');
+  src: url('fonts/VT323/VT323-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
