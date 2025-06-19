@@ -299,10 +299,10 @@ section, footer {
 }
 #about .sdgs span {
   font-family: "VT323", monospace;
-  text-shadow: 2px 2px 4px var(--lightgreen);
+  /* text-shadow: 1px 1px 4px var(--lightgreen); */
   padding: 2px 2px;
-  color: #ffffff;
-  /* color: var(--darkblue); */
+  /* color: #ffffff; */
+  color: var(--darkgreen);
   /* background: #d7effb; */
 }
 .sdgs .option-1 {
