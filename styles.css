@@ -399,6 +399,15 @@ section, footer {
   flex-direction: column;
   flex: 1;
 }
+.speaker-placeholder {
+  width: 250px;
+  height: 250px;
+  background-color: var(--darkgreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
 .speaker .speaker-first, .speaker .speaker-last {
   font-family: 'Anton', sans-serif;
   text-shadow: 4px 4px 0px var(--darkgreenrgba);
