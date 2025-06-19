@@ -49,6 +49,7 @@ html, body {
   height: 100%;
   font-family: 'PlusJakartaSans', sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .big-title, .section-header h3 {
@@ -88,6 +89,9 @@ a.cta-button, #nav a.cta-button {
   font-weight: bold;
   letter-spacing: 5px;
   font-size: 14px;
+}
+a.cta-button:hover {
+  cursor: pointer;
 }
 
 /* hero */
@@ -159,10 +163,14 @@ a.cta-button, #nav a.cta-button {
   transform: rotate(-7deg);
   font-style: italic;
 }
+.hero-title h1 {
+  font-size: 168px;
+}
 
 .hero-title .glitch {
   position: relative;
-  left: 30px;
+  left: 40px;
+  top: -10px;
 }
 
 .hero-text {
@@ -172,6 +180,10 @@ a.cta-button, #nav a.cta-button {
 .hero-text p {
   margin: 30px 0;
   line-height: 24px;
+  font-size: 24px;
+}
+.hero-text a {
+  font-size: 18px;
 }
 
 .sdg-scroller {
@@ -251,18 +263,71 @@ section, footer {
     text-align: center;
     width: fit-content;
     font-weight: bold;
+    z-index: 10;
+}
+
+/* #about .sdgs {
+  display: none;
+} */
+#about {
+  position: relative;
 }
 
 #about .sdgs {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 200%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  animation: scroll-x 30s linear infinite;
+  white-space: nowrap;
+}
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33%);
+  }
+}
+#about .sdg-row {
+  display: flex;
+  justify-content: space-between;
+}
+#about .sdgs span {
+  font-family: "VT323", monospace;
+  text-shadow: 2px 2px 4px var(--lightgreen);
+  padding: 2px 2px;
+  color: #ffffff;
+  /* color: var(--darkblue); */
+  /* background: #d7effb; */
+}
+.sdgs .option-1 {
+  transform: translateY(10px);
+  transform: translateX(70px);
+}
+.sdgs .option-2 {
+  transform: translateY(0);
+  transform: translateX(20px);
+}
+.sdgs .option-3 {
+  transform: translateY(-20px);
+  transform: translateX(200px);
+}
+.sdgs .option-4 {
+  transform: translateY(-10px);
+  transform: translateX(-150px);
 }
 
 .sdg-pitch-about {
   position: relative;
   width: 400px;
   margin-top: 24px;
+  z-index: 10;
 }
-
 .sdg-pitch-about img {
   width: 100%;
   display: block;
@@ -432,4 +497,9 @@ section, footer {
   background-color: var(--lightgreen);
   color: var(--darkblue);
   padding: 1px 1px;
+}
+#footer .citation {
+  font-style: italic;
+  margin-bottom: 15px;
+  font-size: 12px;
 }
